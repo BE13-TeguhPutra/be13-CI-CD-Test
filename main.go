@@ -15,6 +15,8 @@ func main() {
 
 	e := echo.New()
 
+	mysql.DBMigration(db)
+
 	factory.InitFactory(db, e)
 
 	e.Logger.Fatal(e.Start(fmt.Sprintf(":%d", cfg.SERVER_PORT)))
