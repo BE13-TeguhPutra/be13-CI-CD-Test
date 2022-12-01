@@ -8,14 +8,14 @@ on:
 jobs:
   build:
     name: Build
-    runs-on:  ubuntu:latest
+    runs-on:  ubuntu-latest
     steps:
       - name: Connect to server using SSH
         uses: appleboy/ssh-action@master
         with: 
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
-          Key: ${{ secrets.KEY }}
+          key: ${{ secrets.KEY }}
           port: ${{ secrets.port }}
           script: |
             cd /home/putrategu/be13-CI-CD-Test
