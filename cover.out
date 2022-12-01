@@ -1,0 +1,17 @@
+mode: set
+be13/clean-arch/features/user/service/logic.go:15.63,20.2 1 1
+be13/clean-arch/features/user/service/logic.go:23.50,25.22 2 1
+be13/clean-arch/features/user/service/logic.go:28.2,28.12 1 1
+be13/clean-arch/features/user/service/logic.go:25.22,27.3 1 1
+be13/clean-arch/features/user/service/logic.go:32.64,34.20 2 1
+be13/clean-arch/features/user/service/logic.go:37.2,37.18 1 1
+be13/clean-arch/features/user/service/logic.go:34.20,36.3 1 1
+be13/clean-arch/features/user/service/logic.go:42.72,46.2 2 1
+be13/clean-arch/features/user/service/logic.go:49.63,51.71 2 1
+be13/clean-arch/features/user/service/logic.go:55.2,56.16 2 1
+be13/clean-arch/features/user/service/logic.go:59.2,59.12 1 1
+be13/clean-arch/features/user/service/logic.go:51.71,53.3 1 1
+be13/clean-arch/features/user/service/logic.go:56.16,58.3 1 1
+be13/clean-arch/features/user/service/logic.go:63.71,65.16 2 1
+be13/clean-arch/features/user/service/logic.go:68.2,68.12 1 1
+be13/clean-arch/features/user/service/logic.go:65.16,67.3 1 1
