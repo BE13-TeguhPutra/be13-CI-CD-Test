@@ -10,4 +10,21 @@ jobs:
     name: Build
       runs-on:  ubuntu:latest
       steps:
-        - name: Connect to server
+        - name: Connect to server using SSH
+          uses: appleboy/ssh-action@master
+          with: 
+            host: ${{ secrets.HOST }}
+            username: ${{ secrets.USERNAME }}
+            Key: ${{ secrets.KEY }}
+            port: ${{ secrets.port }}
+              cd /home/putrategu/be13-CI-CD-Test
+              git pull origin main
+              docker stop beContainer
+              docker rm beContainer
+              docker build -t be-images:latest .
+              docker run -d -p 80:8080 -e SERVER_PORT=${{ secrets.SERVER_PORT }} -e DB_USERNAME=${{ secrets.DB_USERNAME }} -e DB_PASSWORD=${{ secrets.DB_PASSWORD }} -e DB_HOST=${{ secrets.DB_HOST }} -e DB_PORT=${{ secrets.DB_PORT }} -e DB_NAME=${{ secrets.DB_NAME }} --name=teguhContainer teguh-ci/cd-images:latest
+
+
+
+
+          
