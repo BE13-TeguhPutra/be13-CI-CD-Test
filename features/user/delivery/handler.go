@@ -29,7 +29,7 @@ func New(service user.ServiceInterface, e *echo.Echo) {
 func (delivery *UserDelivery) GetAll(c echo.Context) error {
 	result, err := delivery.userServices.GetAlluser()
 	if err != nil {
-		return c.JSON(http.StatusBadRequest, helper.FailedResponse("Failed"))
+		return c.JSON(http.StatusBadRequest, helper.FailedResponse("Data Users is empty"))
 	}
 	data := responseList(result)
 	// role := middlewares.ExtractTokenUserRole(c)

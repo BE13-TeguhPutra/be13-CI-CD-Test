@@ -15,5 +15,6 @@ func InitDB(cfg *config.AppConfig) *gorm.DB {
 	if err != nil {
 		log.Fatal("Cant connect to DB")
 	}
+
 	return db
 }
