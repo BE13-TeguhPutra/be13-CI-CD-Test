@@ -1,0 +1,13 @@
+name: Deploy to Gcp
+
+on:
+  push:
+    branch:
+    -main
+
+jobs:
+  build:
+    name: Build
+      runs-on:  ubuntu:latest
+      steps:
+        - name: Connect to server
